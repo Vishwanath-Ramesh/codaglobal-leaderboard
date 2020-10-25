@@ -1,0 +1,13 @@
+# Server
+server/node_modules
+server/dist
+server/coverage
+server/yarn.lock
+server/lib
+
+# Client
+client/node_modules
+client/dist
+client/coverage
+client/yarn.lock
+client/lib
