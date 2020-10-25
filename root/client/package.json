@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "babel": "babel src --out-dir lib",
-    "lint": "eslint --ignore-path ../.gitignore .",
-    "format": "prettier --ignore-path ../.gitignore --write .",
+    "lint": "eslint --ignore-path .eslintignore .",
+    "format": "prettier --ignore-path .eslintignore --write .",
     "check-format": "prettier --list-different .",
     "validate": "yarn lint && yarn test && yarn build",
     "validate-parallel": "npm-run-all --parallel format lint test build",
