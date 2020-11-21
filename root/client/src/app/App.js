@@ -1,20 +1,32 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
+import ErrorBoundary from '../views/pages/ErrorBoundary/ErrorBoundary'
 
-import api from '../api/api'
+import getAPIData from '../models/api/api'
+import apiEndPoints from '../models/api/apiEndPoints'
+import Routes from '../views/Routes/Routes'
 import './App.css'
 
 const App = () => {
-  const [response, setResponse] = useState('')
+  const [data, setData] = React.useState()
 
-  useEffect(() => {
+  React.useEffect(() => {
     async function fetchData() {
-      const response = await api('GET', 'http://localhost:5000')
-      setResponse(response.data.result)
+      const response = await getAPIData(
+        apiEndPoints.getRoot.method,
+        apiEndPoints.getRoot.url
+      )
+      setData(response.data)
     }
     fetchData()
   }, [])
-
-  return <div>{response}</div>
+  return (
+    <div className="app">
+      <ErrorBoundary>
+        <Routes />
+        <p>{data?.result}</p>
+      </ErrorBoundary>
+    </div>
+  )
 }
 
 export default App
