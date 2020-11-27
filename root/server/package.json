@@ -17,15 +17,17 @@
     "test:watch": "jest --watchAll",
     "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch",
     "setup": "yarn install && yarn validate",
-    "build": "cross-env NODE_ENV=production webpack",
-    "start": "nodemon ./src/index.js"
+    "build": "webpack",
+    "start": "node ./dist/server.js",
+    "dev": "nodemon -r dotenv/config ./src/index.js"
   },
   "keywords": [],
   "author": "Vishwanath R",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongodb": "^3.6.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.11.6",
@@ -36,7 +38,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/user-event": "^12.1.9",
     "babel-loader": "^8.1.0",
-    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
     "eslint": "^7.10.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^6.13.0",
@@ -51,7 +53,8 @@
     "prettier": "^2.1.2",
     "test-data-bot": "^0.8.0",
     "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-node-externals": "^2.5.2"
   },
   "husky": {
     "hooks": {

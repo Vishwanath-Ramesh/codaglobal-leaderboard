@@ -1,9 +1,8 @@
 const path = require('path')
-
-const env = String(process.env.NODE_ENV).toLowerCase()
+const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
-  mode: env || 'production',
+  mode: 'production',
   target: 'node',
   entry: './src/index.js',
   output: {
@@ -11,10 +10,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'), // Output build directory name
     publicPath: '/', // The bundled files will be available in the browser under this path.
   },
-  externals: {
-    // Prevent bundling of certain imported packages and instead retrieve these external dependencies at runtime
-    express: 'express',
-  },
+  externals: [nodeExternals()], // Prevent bundling of specified packages,
   module: {
     rules: [
       {
