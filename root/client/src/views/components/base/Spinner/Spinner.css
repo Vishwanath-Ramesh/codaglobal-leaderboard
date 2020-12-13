@@ -1,0 +1,7 @@
+.backdrop {
+  color: var(--primary-color);
+}
+
+.backdrop.MuiBackdrop-root {
+  z-index: 1;
+}

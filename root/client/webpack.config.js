@@ -11,7 +11,7 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     chunkFilename: '[name].chunk.js',
-    path: path.resolve(__dirname, 'dist'), // Output build directory name
+    path: path.resolve(path.join(__dirname, '../server/'), 'public'), // Output build directory name
     publicPath: '/', // The bundled files will be available in the browser under this path.
   },
   plugins: [

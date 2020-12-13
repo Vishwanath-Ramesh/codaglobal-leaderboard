@@ -1,7 +1,19 @@
 const apiEndPoints = {
-  getRoot: {
+  getLeaderboardData: {
     method: 'get',
-    url: '/',
+    url: '/api/leaderboard',
+  },
+  getTeam: {
+    method: 'get',
+    url: '/api/teams',
+  },
+  addTeam: {
+    method: 'post',
+    url: '/api/teams',
+  },
+  createMatch: {
+    method: 'post',
+    url: '/api/matches',
   },
 }
 

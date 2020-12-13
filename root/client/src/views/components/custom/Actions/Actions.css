@@ -1,0 +1,25 @@
+.actions {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 1rem;
+  bottom: 1rem;
+  flex-direction: column-reverse;
+}
+
+.actions .actions__item {
+  margin: 0.5rem;
+}
+
+.actions .actions__item.MuiFab-primary {
+  background-color: rgba(0, 0, 0, 0.87);
+}
+
+.actions .actions__item.MuiFab-primary:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #000000;
+}
+
+#download-link {
+  display: none;
+}

@@ -24,6 +24,10 @@
   "author": "Vishwanath R",
   "license": "ISC",
   "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "ag-grid-community": "^24.1.0",
+    "ag-grid-react": "^24.1.1",
     "axios": "^0.21.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
@@ -71,7 +75,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && yarn lint && yarn test"
+      "pre-commit": "lint-staged && yarn test"
     }
   },
   "lint-staged": {

@@ -1,0 +1,76 @@
+.leaderboard {
+  display: flex;
+  padding: 1rem;
+  height: 81%;
+  width: 80%;
+  font-size: 1rem;
+}
+
+.leaderboard__table {
+  height: 100%;
+  width: 100%;
+}
+
+/* Match Modal */
+.matchmodal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  background-color: #fff;
+}
+
+.matchmodal__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.leaderboard__selectedteam {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #000000;
+}
+
+.leaderboard__resulttype {
+  justify-content: center;
+}
+
+.ag-theme-alpine-dark {
+  font-family: Alegreya, serif;
+}
+.ag-header-group-cell-label {
+  justify-content: center;
+}
+
+.leaderboard .ag-header-group-cell {
+  font-size: 50px;
+}
+
+.ag-pivot-on .ag-header-group-cell {
+  font-size: 10px;
+  color: green;
+}
+
+.ag-header-group-cell-label {
+  color: #8a6d3b;
+}
+
+.leaderboard .ag-header-cell-label {
+  color: #2196f3;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.ag-pivot-on .ag-header-cell-label .ag-header-cell-text {
+  /*There is empty space left at the top from the menu and sort
+    icons not used*/
+  /* margin-top: 25px; */
+}
