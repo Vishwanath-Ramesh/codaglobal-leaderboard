@@ -18,7 +18,7 @@
     "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch",
     "setup": "yarn install && yarn validate",
     "build": "webpack",
-    "start": "node ./dist/server.js",
+    "start": "node ./src/index.js",
     "dev": "nodemon -r dotenv/config ./src/index.js"
   },
   "keywords": [],

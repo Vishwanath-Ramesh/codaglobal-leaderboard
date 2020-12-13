@@ -95,4 +95,4 @@ yarn build
 ```
 
 You can also open
-[the deployed app on Firebase](https://caavo-usergroup-bda07.web.app/).
+[the deployed app on Heroku](https://codaglobal-leaderboard.herokuapp.com/).
