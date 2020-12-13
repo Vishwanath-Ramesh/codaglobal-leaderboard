@@ -331,6 +331,7 @@ const Leaderboard = () => {
         </Modal.Content>
         <Modal.Footer>
           <Button
+            color="primary"
             variant="contained"
             disableRipple
             disableElevation
@@ -340,6 +341,7 @@ const Leaderboard = () => {
             Continue
           </Button>
           <Button
+            color="secondary"
             variant="contained"
             disableRipple
             disableElevation

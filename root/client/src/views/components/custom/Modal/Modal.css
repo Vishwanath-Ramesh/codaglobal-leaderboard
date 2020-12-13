@@ -57,8 +57,8 @@
   color: #ffffff;
 }
 
-.modal__cancel,
-.modal__cancel.MuiButton-root:hover {
+.modal .modal__cancel,
+.modal .modal__cancel.MuiButton-root:hover {
   color: #ffffff;
 }
 
